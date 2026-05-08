@@ -1,0 +1,12 @@
+name: Himmat 
+role: Software Developer
+experience_years: 3 years
+learning: True
+tools:
+  - Docker
+  - GitHub
+  - GitHub Actions
+  - Terraform
+  - Kubernetes
+  - Ansible
+Hobbies: [ Fitness Training, Sports, Photography]
