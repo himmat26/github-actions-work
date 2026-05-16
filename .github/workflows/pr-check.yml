@@ -5,7 +5,7 @@ on:
 
 jobs:
   check:
-    - name: print the branch name: 
+    - name: print the branch name
       run: |
         echo "PR check running for branch: ${{ github.ref_name }}"
 
