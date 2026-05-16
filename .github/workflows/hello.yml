@@ -8,5 +8,8 @@ jobs:
   greet:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        run: actions/checkout@v4
+        
       - name: say hello
         run: echo "Hello user"
