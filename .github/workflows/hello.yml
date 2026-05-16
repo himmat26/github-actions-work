@@ -1,7 +1,8 @@
 name: hello
 on: 
-#  push: 
-#    branches:
+  push: 
+    branches:
+        - test
     
 
 jobs:
