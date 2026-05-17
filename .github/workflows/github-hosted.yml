@@ -1,0 +1,30 @@
+name: github-hosted
+on: 
+  workflow_dispatch:
+
+jobs:
+  ubuntu-latest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print system name for Ubuntu
+        run: |
+          echo "OS name: $RUNNER_OS"
+          echo "Runner Hostname: $(hostname)"
+          echo "User: $(whoami)"  
+  windows-latest:
+    runs-on: windows-latest
+    steps:
+      - name: Print system name for Window
+        run: |
+          echo "OS name: $RUNNER_OS"
+          echo "Runner Hostname: $(hostname)"
+          echo "User: $(whoami)"
+  macos-latest:
+    runs-on: macos-latest
+    steps:
+      - name: Print system name for Mac
+        run: |
+          echo "OS name: $RUNNER_OS"
+          echo "Runner Hostname: $(hostname)"
+          echo "User: $(whoami)"
+          
