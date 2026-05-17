@@ -4,12 +4,12 @@ on:
 
 jobs:
   matrix:
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
 #    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
 #        os: [ubuntu-latest, windows-latest]
-        python-version: [3.10, 3.11, 3.12]
+        python-version: ["3.10", 3.11, 3.12]
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
