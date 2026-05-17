@@ -3,15 +3,16 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        description: 'Environment to run tests against'
+        description: "Select environment (staging/production)"
         type: environment
         required: true
+        default: "staging"
 
 jobs:
   manual:
     runs-on: ubuntu-slim
     steps:
-      - name: Print the values from input
+      - name: Print selected environment
         run: |
           echo "Environment: ${{ inputs.environment }}"
       
