@@ -1,4 +1,4 @@
-name: manual
+name: matrix
 on: 
   workflow_dispatch:
 
