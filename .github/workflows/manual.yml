@@ -1,0 +1,17 @@
+name: manual
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to run tests against'
+        type: environment
+        required: true
+
+jobs:
+  manual:
+    runs-on: ubuntu-slim
+    steps:
+      - name: Print the values from input
+        run: |
+          echo "Environment: ${{ inputs.environment }}"
+      
