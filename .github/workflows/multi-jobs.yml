@@ -17,8 +17,8 @@ jobs:
 
       - name: Environment variables
         run: |
-          echo "App_name: $env.APP_NAME
-          echo "Environment: $env.ENVIRONMENT
+          echo "App_name: ${{ env.APP_NAME }} 
+          echo "Environment: ${{ env.ENVIRONMENT }}
           echo "Version: $env.VERSION
   test:
     runs-on: ubuntu-latest
