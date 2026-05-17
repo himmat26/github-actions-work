@@ -11,6 +11,10 @@ jobs:
           echo "OS name: $RUNNER_OS"
           echo "Runner Hostname: $(hostname)"
           echo "User: $(whoami)"  
+          docker --version
+          python --version
+          node --version
+          git --version
   windows-latest:
     runs-on: windows-latest
     steps:
