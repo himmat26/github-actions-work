@@ -6,7 +6,10 @@ on:
         description: "Select environment (staging/production)"
         type: environment
         required: true
-        default: "staging"
+        options:
+          - staging
+          - prod
+        
 
 jobs:
   manual:
