@@ -1,7 +1,9 @@
 name: check
-#on:
+on:
+  push: 
+    branches: test
 #  pull_request:
-#    branches: 
+#   branches: 
 #      - main
 #      - test
 #on:
