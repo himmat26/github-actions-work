@@ -1,0 +1,13 @@
+name: self-hosted
+on: 
+  workflow_dispatch:
+
+jobs:
+  ubuntu-latest:
+    runs-on: self-hosted-hawk
+    steps:
+      - name: Print system name for Ubuntu
+        run: |
+          echo "OS name: $RUNNER_OS"
+          echo "Runner Hostname: $(hostname)"
+          echo "User: $(whoami)"  
