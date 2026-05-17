@@ -13,7 +13,7 @@ jobs:
         exclude: 
           - os: windows-latest 
             python-version: "3.10"
-      fail-fast: false
+      fail-fast: true
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
