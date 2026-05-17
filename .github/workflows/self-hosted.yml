@@ -11,3 +11,5 @@ jobs:
           echo "OS name: $RUNNER_OS"
           echo "Runner Hostname: $(hostname)"
           echo "User: $(whoami)"  
+          pwd
+          touch testfile
