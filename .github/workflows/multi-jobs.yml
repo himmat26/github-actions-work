@@ -1,9 +1,9 @@
 name: multi-job
-env:
-  APP_NAME: myapp
 on:
   workflow_dispatch:
-
+env:
+  APP_NAME: myapp
+  
 jobs:
   build:
     env:
@@ -17,7 +17,7 @@ jobs:
           echo "Building the app"
           echo "App_name: ${{ env.APP_NAME }} 
           echo "Environment: ${{ env.ENVIRONMENT }}
-          echo "Version: ${{ env.VERSION }}
+          echo "Version: $VERSION
 
   test:
     runs-on: ubuntu-latest
