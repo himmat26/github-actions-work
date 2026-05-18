@@ -14,5 +14,5 @@ jobs:
     steps:
       - name: read an output from previous step
         run: | 
-          echo "Output: ${{ needs.set-output.outputs.date }}
+          echo "Output: ${{ needs.set-output.outputs.date }}"
       
