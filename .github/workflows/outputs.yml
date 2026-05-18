@@ -5,8 +5,11 @@ on:
 jobs:
   set-output:
     runs-on: ubuntu-latest
+    outputs:
+      date: ${{ steps.set-date.outputs.date}}
     steps:
       - name: sets an output
+        id: set-date
         run: echo "date=$(date)" >> $GITHUB_OUTPUT
   read-output:
     runs-on: ubuntu-latest
