@@ -1,0 +1,27 @@
+name: conditional
+on: 
+   push:
+   pull_request:
+
+jobs:
+  demo:
+    if: github.event_name == 'push'
+    runs-on: ubuntu_latest
+    steps:
+      - name: Only on main branch
+        if:  github.ref == 'refs/heads/main'
+        run: echo "Running on main branch"
+      
+      - name: failing step
+        run: exit 1
+
+      - name: runs if previous step has failed
+        if: failure() 
+        run: echo "Previous step failed"   
+      
+      - name: Ignore failure step
+        continue-on-error: true  
+        run: exit 1
+
+       - name: Still runs
+        run: echo "Workflow continues"
